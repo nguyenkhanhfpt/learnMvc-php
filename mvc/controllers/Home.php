@@ -12,7 +12,7 @@
 
             $this->view('masterLayout', [
                 'page' => 'viewHome',
-                'news' => $this->modelNews->getNews()
+                'news' => $this->modelNews->getNewsLimit()
             ]);
         }
     }
