@@ -1,5 +1,5 @@
 <div class="container mt-4">
-    <div class="row">
+    <div class="row" id="content">
         <?php foreach ($data['news'] as $new) : ?>
             <div class="col-4">
                 <div class="card-header">
@@ -12,6 +12,6 @@
             </div>
         <?php endforeach ?>
     </div>
-
-    <a href="javascript:void(0)" class="text-decoration-none text-center" style="display: inherit;">Xem them</a>
+    <p id="numEnd" class="d-none"><?= $data['end'] ?></p>
+    <a id="btn-viewMore" href="javascript:void(0)" class="text-decoration-none text-center" style="display: inherit;">Xem them</a>
 </div>

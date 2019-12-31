@@ -13,5 +13,7 @@
     <?php require_once './mvc/views/Pages/header.php' ?>
 
     <?php require './mvc/views/Pages/' .$data['page']. '.php' ?>
+
+    <script src="./public/js/main.js"></script>
 </body>
 </html>
