@@ -13,7 +13,7 @@
                 $this->controller = $arrUrl[0];
                 unset($arrUrl[0]);
             }
-            require_once './mvc/controllers/' .$arrUrl[0]. '.php';
+            require_once './mvc/controllers/' .$this->controller. '.php';
             $this->controller = new $this->controller;
 
             if(isset($arrUrl[1])) {
