@@ -11,6 +11,7 @@
         public function Default() {
 
             $this->view('masterLayout', [
+                'page' => 'viewHome',
                 'news' => $this->modelNews->getNews()
             ]);
         }

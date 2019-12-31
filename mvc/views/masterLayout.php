@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <h1><?= $data['news'] ?></h1>
+    <?php require_once './mvc/views/Pages/menu.php' ?>
+    <?php require_once './mvc/views/Pages/header.php' ?>
+
+    <?php require './mvc/views/Pages/' .$data['page']. '.php' ?>
 </body>
 </html>
